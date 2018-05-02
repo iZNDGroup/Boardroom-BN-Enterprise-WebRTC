@@ -7,18 +7,18 @@
   "manifest_version" : 2,
   "minimum_chrome_version": "34",
   "description" : "This Chrome extension is developed for Boardroom demos. It simply captures the content of your screen.",
-  "homepage_url": "https://demo.boardroom.work",
+  "homepage_url": "https://bn.boardroom.work",
   "background": {
     "scripts": ["background-script.js"],
     "persistent": false
   },
     "externally_connectable": {
-    "matches": ["https://demo.boardroom.work/*", "http://www.boardroom.work/*"]
+    "matches": ["https://bn.boardroom.work/*", "http://www.boardroom.work/*"]
   },
   "content_scripts": [ {
    "js": [ "content-script.js" ],
    "all_frames": true,
-   "matches": ["https://demo.boardroom.work/*", "https://boardroom2.herokuapp.com/*", "http://www.boardroom.work/*"]
+   "matches": ["https://bn.boardroom.work/*", "https://bn.boardroom.work.herokudns.com/*", "http://www.boardroom.work/*"]
   }],
   "icons": {
     "16": "logo16.png",
